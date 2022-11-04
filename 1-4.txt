@@ -1,0 +1,4 @@
+1. Significa Document Object Model, é o que nos permite criar, alterar e remover componentes do HTML. Gera uma ramificação no HTML.
+2. Permite desenhar e manipular elementos gráficos em página web, tanto em 2d quanto 3d.
+3. HTML, CSS e Javascript.
+4. Serve para coletar informações ou referenciar um elemento em um documento html.
