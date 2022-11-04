@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-a</title>
+    <style>
+    </style>
+
+</head>
+
+<body>
+    <canvas width="1100" height="250"> </canvas>
+
+    <script>
+        let canvas = document.querySelector('canvas');
+        let contexto = canvas.getContext('2d');
+
+        contexto.lineWidth = 3;
+
+        //RETANGULO
+        contexto.beginPath();
+        contexto.rect(10, 10, 350, 200);
+        contexto.stroke();
+        contexto.fillStyle = 'white';
+        contexto.fill();
+        contexto.strokeStyle = '#2F528F';
+        contexto.closePath();
+        contexto.stroke();
+        
+        //TRIANGULO
+        contexto.beginPath();
+        contexto.moveTo(185, 60);
+        contexto.lineTo(120, 160);
+        contexto.lineTo(250, 160);
+        contexto.fillStyle = '#4472C4';
+        contexto.fill();
+
+        //CIRCULO
+        contexto.beginPath();
+        contexto.arc(560, 110, 80, 0, 2 * Math.PI);
+        contexto.stroke();
+        contexto.fillStyle = 'white';
+        contexto.fill();
+        contexto.strokeStyle = '#2F528F';
+        contexto.closePath();
+        contexto.stroke();
+        
+        //QUADRADO
+        contexto.beginPath();
+        contexto.rect(510, 60, 100, 100);
+        contexto.fillStyle = '#4472C4';
+        contexto.fill();
+        contexto.closePath();
+        contexto.strokeStyle = '#2F528F';
+        contexto.stroke();
+
+        //TRI DUPLO DIR
+        contexto.beginPath();
+        contexto.moveTo(820, 30);
+        contexto.lineTo(730, 185);
+        contexto.lineTo(910, 185);
+        contexto.fillStyle = 'white';
+        contexto.fill();
+        contexto.closePath();
+        contexto.strokeStyle = "#5A83CB";
+        contexto.stroke();
+
+        //TRI DUPLO ESQ
+        contexto.beginPath();
+        contexto.moveTo(950, 30);
+        contexto.lineTo(860, 185);
+        contexto.lineTo(1040, 185);
+        contexto.fillStyle = 'white';
+        contexto.fill();
+        contexto.closePath();
+        contexto.strokeStyle = "#5A83CB";
+        contexto.stroke();
+
+        //TRI DUPLO CENTRAL
+        contexto.beginPath();
+        contexto.moveTo(885, 140);
+        contexto.lineTo(860, 185);
+        contexto.lineTo(910, 185);
+        contexto.fillStyle = 'white';
+        contexto.fill();
+        contexto.closePath();
+        contexto.strokeStyle = "#5A83CB";
+        contexto.stroke();
+        
+    </script>
+</body>
+</html>
