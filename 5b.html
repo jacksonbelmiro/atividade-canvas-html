@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5-b</title>
+
+</head>
+
+<body>
+    <canvas width="470" height="250"></canvas>
+    
+
+    <script>
+        let canvas = document.querySelector("canvas");
+        let contexto = canvas.getContext("2d");
+        contexto.lineWidth = 2;
+
+        for (let i = 0; i < 6; i++) {
+            for (let j = 0; j < 3; j++) {
+                contexto.beginPath();
+                contexto.rect(45 + (i * 70), 45 + (j * 70), 50, 50);
+                contexto.stroke();
+                contexto.fillStyle = 'white';
+                contexto.fill();
+                contexto.strokeStyle = '#2F528F';
+                contexto.closePath();
+                contexto.stroke();
+
+                contexto.beginPath();
+                contexto.moveTo(70 + (i*70), 56 + (j*70));
+                contexto.lineTo(55 + (i*70), 82 + (j*70));
+                contexto.lineTo(85 + (i*70), 82 + (j*70));
+                contexto.fillStyle = 'white';
+                contexto.fill();
+                contexto.closePath();
+                contexto.strokeStyle = "#4472C4";
+                contexto.stroke();
+            }
+        }
+    </script>
+</body>
+
+</html>
